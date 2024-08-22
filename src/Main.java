@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +21,7 @@ public class Main {
 
             switch (option) {
                 case 1:
-                    System.out.println("You selected Movies.");
+                    System.out.println("You selected Movies.");.
 
                     break;
                 case 2:
@@ -31,6 +30,7 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("You selected Books.");
+
 
                     break;
                 case 4:
