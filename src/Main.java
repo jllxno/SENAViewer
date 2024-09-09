@@ -21,7 +21,7 @@ public class Main {
 
             switch (option) {
                 case 1:
-                    System.out.println("You selected Movies.");.
+                    System.out.println("You selected Movies.");
 
                     break;
                 case 2:

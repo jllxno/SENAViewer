@@ -1,6 +1,6 @@
 package edu.misena.senaviewer.model;
 
-public class Movie {
+public class Movie extends film{
     private int id;
     private String title;
     private String genre;
@@ -11,14 +11,10 @@ public class Movie {
     private int timeViewed;
 
 
-    public Movie(String title, String genre, String creator, int duration, int year) {
-        this.title = title;
-        this.genre = genre;
-        this.creator = creator;
-        this.duration = duration;
-        this.year = year;
-        this.viewed = false;
-        this.timeViewed = 0;
+    public Movie(String title, String genre, String creator, int duration) {
+        super(title, genre, creator, duration);
+        this.year= year;
+        this.viewed= viewed;
     }
 
 
