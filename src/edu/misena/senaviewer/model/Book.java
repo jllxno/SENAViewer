@@ -2,22 +2,20 @@ package edu.misena.senaviewer.model;
 
 import java.util.List;
 
-public class Book {
-    private int id;
-    private String title;
-    private String editionDate;
-    private String editorial;
-    private String authors;
-    private String isbn;
-    private boolean readed;
-    private int timeReaded;
+public class Book extends publication {
+    public int id;
+    public String title;
+    public String editionDate;
+    public String editorial;
+    public String authors;
+    public String isbn;
+    public boolean readed;
+    public int timeReaded;
 
 
-    public Book(String title, String editionDate, String editorial, String isbn) {
-        this.title = title;
-        this.editionDate = editionDate;
-        this.editorial = editorial;
-        this.isbn = isbn;
+    public Book(String title, String editionDate, String editorial) {
+        super(title, editionDate, editorial);
+
     }
 
 
@@ -90,4 +88,19 @@ public class Book {
     public void setTimeReaded(int timeReaded) {
         this.timeReaded = timeReaded;
     }
-}
+
+@Override
+public String toString(){
+    return "serie{" +
+            super.toString()+
+            ", id=" + id +
+            ", title=" + title +
+            ", editionDate=" + editionDate +
+            ", editorial=" + editorial +
+            ", authors=" + authors +
+            '}';
+
+
+
+
+}}

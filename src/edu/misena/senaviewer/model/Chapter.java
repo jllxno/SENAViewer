@@ -1,13 +1,13 @@
 package edu.misena.senaviewer.model;
 
 public class Chapter {
-    private int id;
-    private String title;
-    private int duration;
-    private int year;
-    private boolean viewed;
-    private int timeViewed;
-    private int sessionNumber;
+    public int id;
+    public String title;
+    public int duration;
+    public int year;
+    public boolean viewed;
+    public int timeViewed;
+    public int sessionNumber;
 
 
     public Chapter(String title, int duration, int year) {

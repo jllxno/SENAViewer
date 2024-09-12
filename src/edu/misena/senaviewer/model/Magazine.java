@@ -3,17 +3,16 @@ package edu.misena.senaviewer.model;
 import java.util.Date;
 import java.util.List;
 
-public class Magazine {
-    private int id;
-    private String title;
-    private Date editionDate;
-    private String editorial;
-    private String authors;
+public class Magazine extends publication{
+    public int id;
+    public String title;
+    public String editionDate;
+    public String editorial;
+    public String authors;
 
-    public Magazine(String title, String genre, int duration) {
-        this.title = title;
-        this.editionDate = editionDate;
-        this.editorial = editorial;
+    public Magazine(String title, String editionDate, String editorial) {
+        super(title, editionDate, editorial);
+
 
     }
 
@@ -36,11 +35,11 @@ public class Magazine {
     }
 
 
-    public Date getEditionDate() {
+    public String getEditionDate() {
         return editionDate;
     }
 
-    public void setEditionDate(Date editionDate) {
+    public void setEditionDate(String editionDate) {
         this.editionDate = editionDate;
     }
 
@@ -63,5 +62,20 @@ public class Magazine {
         this.authors = authors;
     }
 
-}
+
+@Override
+public String toString(){
+    return "serie{" +
+            super.toString()+
+            ", id=" + id +
+            ", title=" + title +
+            ", editionDate=" + editionDate +
+            ", editorial=" + editorial +
+            ", authors=" + authors +
+            '}';
+
+
+
+
+}}
 

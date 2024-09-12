@@ -1,15 +1,15 @@
 package edu.misena.senaviewer.model;
 
 public class Serie extends film {
-    private int id;
-    private String title;
-    private String genre;
-    private String creator;
-    private int duration;
-    private int year;
-    private boolean viewed;
-    private int timeViewed;
-    private int sessionQuantity;
+    public int id;
+    public String title;
+    public String genre;
+    public String creator;
+    public int duration;
+    public int year;
+    public boolean viewed;
+    public int timeViewed;
+    public int sessionQuantity;
 
 
     public Serie(String title, String genre,String creator, int duration) {
@@ -98,4 +98,23 @@ public class Serie extends film {
     public void setSessionQuantity(int sessionQuantity) {
         this.sessionQuantity = sessionQuantity;
     }
-}
+
+
+@Override
+public String toString(){
+    return "serie{" +
+            super.toString()+
+            ", id=" + id +
+            ", title=" + title +
+            ", editionDate=" + genre +
+            ", editorial=" + creator +
+            ", authors=" + duration +
+            ", editionDate=" + year +
+            ", editorial=" + viewed +
+            ", authors=" + timeViewed +
+            '}';
+
+
+
+
+}}
